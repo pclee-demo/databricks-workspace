@@ -1,5 +1,4 @@
 data "databricks_service_principal" "admin_service_principal" {
-  count          = var.enable_admin_sp_lookup ? 1 : 0
   application_id = var.databricks_client_id
   provider       = databricks.mws
 }
